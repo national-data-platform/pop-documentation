@@ -4,27 +4,27 @@ This guide will walk you through generating a setup script for your Point of Pre
 
 ## Step 1: Access the National Data Platform
 
-![Step 1](./1.jpeg)
+![Step 1](./1.png)
 1. Open your web browser and navigate to [nationaldataplatform.org](https://nationaldataplatform.org).
 
 ## Step 2: Login
 
-![Step 2](./2.jpeg)
+![Step 2](./2.png)
 2. Click on the **Log in/Register** button to sign in with your credentials.
 
 ## Step 3: Navigate to POPs
 
-![Step 3](./3.jpeg)
+![Step 3](./3.png)
 3. Once logged in, locate and click on **POPs** in the sidebar or main navigation.
 
 ## Step 4: Choose POP Setup
 
-![Step 4](./4.jpeg)
+![Step 4](./4.png)
 4. You will see an option to choose between POP (Point of Presence) or sciDX (Scientific Data Exchange). Select **POP** to proceed.
 
 ## Step 5: Fill in the Required Fields
 
-![Step 5](./5.jpeg)
+![Step 5](./5.png)
 5. A form will appear asking for specific details:
    - **Catalog Username**: Enter your catalog username.
    - **Catalog Password**: Enter your catalog password.
@@ -34,13 +34,13 @@ This guide will walk you through generating a setup script for your Point of Pre
 
 ## Step 6: Generate the Script
 
-![Step 6](./6.jpeg)
+![Step 6](./6.png)
 6. Fill in the required fields and then click on the **Generate Script** button.
 7. After a few moments, the setup script will be generated. Copy the script from the screen.
 
 ## Step 7: Log in to Your Server
 
-![Step 7](./7.jpeg)
+![Step 7](./7.png)
 8. Log in to your server where you want to deploy the POP setup. You will need to have **sudo** permissions.
 
 ## Step 8: Save the Script
@@ -48,7 +48,7 @@ This guide will walk you through generating a setup script for your Point of Pre
 
 ## Step 9: Run the Setup Script
 
-![Step 8](./8.jpeg)
+![Step 8](./8.png)
 10. Run the script by executing the following command:
    ```bash
    sudo bash setup.sh
