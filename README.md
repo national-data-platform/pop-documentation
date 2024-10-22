@@ -48,14 +48,16 @@ This guide will walk you through generating a setup script for your Point of Pre
 
 
 6. Fill in the required fields and then click on the **Generate Script** button.
-7. After a few moments, the setup script will be generated. Copy the script from the screen.
 ![Step 6](./6.png)
-## Step 7: Log in to Your Server
 
-
-8. Log in to your server where you want to deploy the POP setup. You will need to have **sudo** permissions.
+7. After a few moments, the setup script will be generated. Copy the script from the Generated box or download it.
 
 ![Step 7](./7.png)
+
+## Step 7: Log in to Your Server
+
+8. Log in to your server where you want to deploy the POP setup. It is prefered to have **sudo** permissions.
+
 
 ## Step 8: Save the Script
 9. On your server, open a text editor (like `nano` or `vim`) and paste the copied script. Save the file as `setup.sh`.
@@ -69,6 +71,7 @@ This guide will walk you through generating a setup script for your Point of Pre
    ```
    
 This will initiate the setup process of your POP environment.
+it will take around 5-6 minutes to finish the setup and configure all the conenctioins and permissions.
 
 ![Step 8](./8.png)
 
