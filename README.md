@@ -81,5 +81,5 @@ it will take around 5-6 minutes to finish the setup and configure all the conenc
 
 
 ## Need Help?
-If you encounter any issues, please refer to the documentation provided on the platform or contact support.
+If you encounter any issues, please refer to the documentation provided on the platform or contact support.[saleemalharir1](https://github.com/saleemalharir1)
 
