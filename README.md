@@ -3,12 +3,15 @@
 This guide will walk you through generating a setup script for your Point of Presence (POP) and running it on your server. Follow these simple steps to get everything up and running smoothly.
 ## Requirements for Running the Script
 - You need **sudo** privileges. If you are not a sudo user, make sure you have the following tools and permissions:
-  - **Docker** (recent version)
-  - **Docker Compose** (recent version)
-  - **Uvicorn** (recent version)
-  - **PIP** (recent version)
+  - **Docker** (recent version) [Install Docker](https://docs.docker.com/engine/install/)
+  - **Docker Compose** (recent version) [Overview of Installing the docker-compose](https://docs.docker.com/compose/install/)
+  - **Uvicorn** (recent version) [Install uvicorn](https://docs.docker.com/compose/install)
+    ``` bash
+    pip install uvicorn
+    ```
+  - **PIP** (recent version) [Install pip](https://pip.pypa.io/en/stable/cli/pip_install/)
   - **Python 3** (recent version)
-  - **Git** (recent version)
+  - **Git** (recent version) [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
   - **Ports 8000 and 8443** should be open
   - **Write permissions** on the server
 
