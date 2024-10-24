@@ -15,6 +15,7 @@ This guide will walk you through generating a setup script for your Point of Pre
   - **Python 3** (recent version)
   - **Git** (recent version) - [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
   - **Ports 8000 and 8443** should be open.
+  - **docker-compose** for the user 
   - **Write permissions** on the server.
 
 **Note**: The script is tested on **Ubuntu**. If you plan to run it on other systems, you may need to modify it accordingly to fit your operating system.
