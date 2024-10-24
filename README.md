@@ -1,10 +1,10 @@
-# Generating and Running the POP Setup Script
+# Generating and Running A POP Setup Script
 
-This guide will walk you through generating a setup script for your Point of Presence (POP) and running it on your server. Follow these simple steps to get everything up and running smoothly.
+This guide will walk you through generating a setup script for your Point of Presence (POP) and running it on your infrastructure. Follow these simple steps to get everything up and running smoothly.
 
 ## Requirements for Running the Script
 - **Sudo privileges**: The script assumes you have **sudo** privileges. If you are not a sudo user, be aware that you may need to manually adjust commands involving `sudo`.
-- **Tools,Permissions and ports Required**:
+- **Tools, permissions, and ports required**:
   - **Docker** (recent version) - [Install Docker](https://docs.docker.com/engine/install/)
   - **Docker Compose** (recent version) - [Install Docker Compose](https://docs.docker.com/compose/install/)
   - **Uvicorn** (recent version): Install via PIP:
@@ -14,11 +14,11 @@ This guide will walk you through generating a setup script for your Point of Pre
   - **PIP** (recent version) - [Install PIP](https://pip.pypa.io/en/stable/cli/pip_install/)
   - **Python 3** (recent version)
   - **Git** (recent version) - [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-  - **Ports 8000 and 8443** should be open.
+  - **Ports 8000 and 8443** should be open
   - **docker-compose** for the user 
-  - **Write permissions** on the server.
+  - **Write permissions** on the server file system
 
-**Note**: The script is tested on **Ubuntu**. If you plan to run it on other systems, you may need to modify it accordingly to fit your operating system.
+**Note**: This script is tested on **Ubuntu 22.04 LTS**. If you plan to run it on other operating systems or othe linux flavlours, you may need to modify it accordingly to fit your operating system setup.
 
 ## Step 1: Access the National Data Platform
 1. Open your web browser and navigate to [nationaldataplatform.org](https://nationaldataplatform.org).
@@ -29,7 +29,7 @@ This guide will walk you through generating a setup script for your Point of Pre
    ![Step 2](./2.png)
 
 ## Step 3: Navigate to POPs
-3. Once logged in, locate and click on **POPs** in the sidebar or main navigation.
+3. Once logged in, locate and click on **POPs** in the sidebar or main navigation to access the NDP POP Factory.
    ![Step 3](./3.png)
 
 ## Step 4: Choose POP Setup
@@ -40,7 +40,7 @@ This guide will walk you through generating a setup script for your Point of Pre
 5. A form will appear asking for specific details:
    - **Catalog Username**: Enter your catalog username.
    - **Catalog Password**: Enter your catalog password.
-   - **for the following three fields please make sure you already contacted the National Data Platform IDP Admins** :[Andreu](https://github.com/Andreufb), [Sergey](https://github.com/sergeygurvich) to get the needes info.
+   - **For the following three fields please make sure you already contacted the National Data Platform IDP Admins** :[Andreu](https://github.com/Andreufb), [Sergey](https://github.com/sergeygurvich) to get the needed info.
    - **IDP Client ID**: Enter the client ID for the Identity Provider.
    - **IDP Client Secret**: Enter the client secret.
    - **Realm Name**: Enter the appropriate realm name.
@@ -54,21 +54,22 @@ This guide will walk you through generating a setup script for your Point of Pre
    ![Step 7](./7.png)
 
 ## Step 7: Log in to Your Server
-8. Log in to your server where you want to deploy the POP setup. It is preferred to have **sudo** permissions.
+8. Log into your server where you want to deploy the POP setup. It is preferred to have **sudo** permissions.
 
 ## Step 8: Save the Script
 9. On your server, open a text editor (like `nano` or `vim`) and paste the copied script. Save the file as `setup.sh`.
+    Alternatively, you can download the file and copy it from your local machine into the server where the POP will be deployed (eg. scp or similar)
 
 ## Step 9: Run the Setup Script
 10. Run the script by executing the following command:
     ```bash
-    sudo bash setup.sh
+    bash setup.sh
     ```
     This will initiate the setup process of your POP environment. It will take around 5-6 minutes to finish the setup and configure all the connections and permissions.
     ![Step 8](./8.png)
 
 ## Accessing the Setup
-After the setup completes, you can access the catalog at `http://yourmachinepublicip:8443` and the POP API at `http://yourmachinepublicip:8000`.
+After the setup completes, you can access the catalog at `http://YourMachinePublicIP:8443` and the POP API at `http://YourMachinePublicIP:8000`.
 
 ## Important Note for Non-Sudo Users
 The generated script will assume that the user has **sudo** privileges. If you do not have sudo privileges, you should comment out the related parts that use `sudo`. Specifically, comment out or modify the following sections:
