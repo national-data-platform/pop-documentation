@@ -40,6 +40,7 @@ This guide will walk you through generating a setup script for your Point of Pre
 5. A form will appear asking for specific details:
    - **Catalog Username**: Enter your catalog username.
    - **Catalog Password**: Enter your catalog password.
+   - **for the following three fields please make sure you already contacted the National Data Platform IDP Admins** :[Andreu](https://github.com/Andreufb), [Sergey](https://github.com/sergeygurvich)
    - **IDP Client ID**: Enter the client ID for the Identity Provider.
    - **IDP Client Secret**: Enter the client secret.
    - **Realm Name**: Enter the appropriate realm name.
