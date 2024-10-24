@@ -4,7 +4,7 @@ This guide will walk you through generating a setup script for your Point of Pre
 
 ## Requirements for Running the Script
 - **Sudo privileges**: The script assumes you have **sudo** privileges. If you are not a sudo user, be aware that you may need to manually adjust commands involving `sudo`.
-- **Tools Required**:
+- **Tools,Permissions and ports Required**:
   - **Docker** (recent version) - [Install Docker](https://docs.docker.com/engine/install/)
   - **Docker Compose** (recent version) - [Install Docker Compose](https://docs.docker.com/compose/install/)
   - **Uvicorn** (recent version): Install via PIP:
